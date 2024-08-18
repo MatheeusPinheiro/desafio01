@@ -64,7 +64,6 @@ def extract_info(bot):
             - "Produto" (str): O nome do produto extraído da página.
             - "Preço" (str): O preço médio do produto extraído da página.
     """
-
     name_product = bot.find_element('/html/body/header/div[3]/div/div[1]/div/div[1]/div[3]/h1', By.XPATH).text
     avarege_price = bot.find_element('hero-metal-data__number', By.CLASS_NAME).text
     
